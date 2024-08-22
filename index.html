@@ -47,7 +47,7 @@
       }
     </style>
   </head>
-  <body -ml-2  class="font-manrope">
+  <body -ml-2 class="font-manrope">
     <!-- header  section -->
     <header class="md:container md:mx-auto">
       <!-- nav bar -->
@@ -207,81 +207,80 @@
       <!-- img div -->
 
       <section class="bg-gray-50">
-        <div class="relative">
+        <!-- <div class="relative">
           <img
             class="absolute left-10 hidden lg:visible md:visible md:w-full"
             src="./assets/Vector.png"
             alt=""
-          />
+          /> -->
 
-          <div class="hero bg-base-200 min-h-screen mt-20">
-            <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-              <img
-                class="md:w-full"
-                src="./assets/Rectangle.png"
-                class="max-w-sm rounded-lg shadow-2xl"
-              />
+        <div class="hero bg-base-200 min-h-screen mt-20 pt-16">
+          <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+            <img
+              class="md:w-full"
+              src="./assets/Rectangle.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
 
-              <!-- text - div  -->
-              <div class="space-y-2 mx-auto">
-                <div
-                  class="flex justify-center md:justify-normal lg:justify-normal"
+            <!-- text - div  -->
+            <div class="space-y-2 mx-auto">
+              <div
+                class="flex justify-center md:justify-normal lg:justify-normal"
+              >
+                <button
+                  class="mb-2 btn font-extrabold text-xl bg-white rounded-full"
                 >
-                  <button
-                    class="mb-2 btn font-extrabold text-xl bg-white rounded-full"
-                  >
-                    <i class="fa-solid fa-arrow-right"></i> About Us
-                  </button>
-                </div>
+                  <i class="fa-solid fa-arrow-right"></i> About Us
+                </button>
+              </div>
 
-                <div
-                  class="flex justify-center md:justify-normal lg:justify-normal"
-                >
-                  <h1 class="text-center md:text-left text-5xl font-black">
-                    We design thoughtful, liveable spaces
-                  </h1>
-                </div>
+              <div
+                class="flex justify-center md:justify-normal lg:justify-normal"
+              >
+                <h1 class="text-center md:text-left text-5xl font-black">
+                  We design thoughtful, liveable spaces
+                </h1>
+              </div>
 
-                <div
-                  class="flex justify-center md:justify-normal lg:justify-normal"
+              <div
+                class="flex justify-center md:justify-normal lg:justify-normal"
+              >
+                <p
+                  class="text-center md:text-left lg:text-left py-6 text-xl font-semibold"
                 >
-                  <p
-                    class="text-center md:text-left lg:text-left py-6 text-xl font-semibold"
-                  >
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents.
+                </p>
+              </div>
+
+              <div
+                class="card lg:card-side bg-base-100 shadow-xl pl-6 justify-self-center"
+              >
+                <figure>
+                  <img src="./assets/commercial.png" alt="Album" />
+                </figure>
+                <div class="card-body -ml-2">
+                  <h2 class="card-title">Commercial</h2>
+                  <p>
                     The barn house captivates with its blend of rustic charm and
-                    modern sophistication, featuring weathered wood, sleek metal
-                    accents.
+                    modern.
                   </p>
                 </div>
+              </div>
 
-                <div
-                  class="card lg:card-side bg-base-100 shadow-xl pl-6 justify-self-center"
-                >
-                  <figure>
-                    <img src="./assets/commercial.png" alt="Album" />
-                  </figure>
-                  <div class="card-body -ml-2 ">
-                    <h2 class="card-title">Commercial</h2>
-                    <p>
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
-                    </p>
-                  </div>
-                </div>
+              <!-- Card 2 -->
 
-                <!-- Card 2 -->
-
-                <div class="card lg:card-side bg-base-100 shadow-xl pl-6">
-                  <figure>
-                    <img src="./assets/residential.png" alt="Album" />
-                  </figure>
-                  <div class="card-body -ml-2 ">
-                    <h2 class="card-title">Residential</h2>
-                    <p>
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
-                    </p>
-                  </div>
+              <div class="card lg:card-side bg-base-100 shadow-xl pl-6">
+                <figure>
+                  <img src="./assets/residential.png" alt="Album" />
+                </figure>
+                <div class="card-body -ml-2">
+                  <h2 class="card-title">Residential</h2>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
                 </div>
               </div>
             </div>
@@ -308,14 +307,16 @@
 
         <!-- grid part  -->
 
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-20 px-6">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pb-20 px-6"
+        >
           <!-- card 1 -->
           <div class="card card-compact shadow-xl p-4 bg-[#E7C1D3]">
             <div class="w-[50px]">
               <img class="w-full" src="./assets/concept.png" alt="Shoes" />
             </div>
 
-            <div class="card-body -ml-2 ">
+            <div class="card-body -ml-2">
               <h2 class="card-title text-xl font-black">Shoes!</h2>
               <p class="font-semibold">
                 If a dog chews shoes whose shoes does he choose?
@@ -351,10 +352,14 @@
           <!-- card 1 -->
           <div class="card card-compact shadow-xl p-4 bg-[#77AAEA]">
             <div class="w-[50px]">
-              <img class="w-full" src="./assets/budget-planning.png" alt="Shoes" />
+              <img
+                class="w-full"
+                src="./assets/budget-planning.png"
+                alt="Shoes"
+              />
             </div>
 
-            <div class="card-body -ml-2 ">
+            <div class="card-body -ml-2">
               <h2 class="card-title text-xl font-black">Shoes!</h2>
               <p class="font-semibold">
                 If a dog chews shoes whose shoes does he choose?
@@ -364,7 +369,6 @@
         </div>
       </section>
 
-
       <!--  -->
     </main>
 
@@ -372,6 +376,61 @@
 
     <!-- footer  -->
 
-    <footer></footer>
+    <footer class="footer footer-center bg-black text-white rounded p-10">
+      <div>
+        <a class="btn btn-ghost text-xl font-extrabold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 26 26"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 bg-[#ABEF5F] rounded-full text-black"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+          Rinterio</a
+        >
+
+        <p class="text-[#737373]">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+
+      <nav
+        class="grid grid-cols-1 md:grid-flow-col gap-4 md:space-x-20 lg:space-x-20"
+      >
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <aside>
+        <a
+          class="btn sm:btn-wide md:btn-md lg:btn-lg rounded-full bg-[#ABEF5F] font-extrabold text-xl"
+          >Book Consult
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 26 26"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 bg-black rounded-full stroke-white stroke-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </a>
+      </aside>
+    </footer>
   </body>
 </html>

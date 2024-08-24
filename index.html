@@ -47,41 +47,13 @@
       }
     </style>
   </head>
-  <body -ml-2 class="font-manrope">
+  <body class="font-manrope">
     <!-- header  section -->
     <header class="md:container md:mx-auto">
       <!-- nav bar -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 p-0 py-5">
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
             <a class="btn btn-ghost text-xl font-extrabold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,13 +82,33 @@
             </ul>
           </div>
           <div class="navbar-end">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden md:hidden bg-gray-300 rounded-full"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] right-2"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="0.5"
               stroke="currentColor"
-              class="size-8 mr-4 border-gray-400 rounded-full border-2"
+              class="size-8 mr-4 border-gray-400 rounded-full border-2 hidden md:block"
             >
               <path
                 stroke-linecap="round"
@@ -131,7 +123,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-8 mr-4 border-gray-400 rounded-full border-2"
+              class="size-8 mr-4 border-gray-400 rounded-full border-2 hidden md:block"
             >
               <path
                 stroke-linecap="round"
@@ -140,7 +132,8 @@
               />
             </svg>
 
-            <a class="btn rounded-3xl bg-[#ABEF5F] font-extrabold text-xl"
+            <a
+              class="btn rounded-full bg-[#ABEF5F] font-extrabold text-xl pt-2 items-center hidden md:inline-block"
               >Book Consult
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +141,7 @@
                 viewBox="0 0 26 26"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 bg-black rounded-full stroke-white stroke-2"
+                class="size-6 bg-black rounded-full stroke-white stroke-2 hidden md:inline-block"
               >
                 <path
                   stroke-linecap="round"
@@ -295,7 +288,7 @@
           <button
             class="btn font-extrabold text-xl bg-white rounded-full mt-20"
           >
-            <i class="fa-solid fa-arrow-right"></i> How We work
+            <i class="fa-solid fa-arrow-right"></i>How We work
           </button>
 
           <h1 class="text-4xl font-black text-center">Our Works Process</h1>
@@ -369,10 +362,177 @@
         </div>
       </section>
 
-      <!--  -->
+      <!-- 10 marks section  -->
+
+      <section>
+        <div class="py-24 space-y-6 grid place-items-center">
+          <button class="btn bg-[#ABEF5F33] rounded-full text-black">
+            <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
+          </button>
+
+          <h1 class="text-3xl font-black text-center text-ellipsis">
+            Our Latest Portfolio
+          </h1>
+
+          <p class="text-center opacity-75">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <!-- Card 1 -->
+
+        <div class="w-10/12 mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+              class="p-6 flex flex-col md:flex md:flex-row border-2 gap-6 col-span-2 rounded-2xl"
+            >
+              <div class="md:w-1/2 lg:w-1/3">
+                <img class="w-full" src="./assets/img1.png" alt="" />
+              </div>
+              <div class="space-y-6">
+                <h1 class="text-xl font-black">Commercial</h1>
+                <p class="text-gray-400 font-semibold">
+                  The barn house captivates with its blend of rustic charm
+                  <br />
+                  and modern. The barn house captivates with its blend of <br />
+                  rustic charm and modern .
+                </p>
+                <div class="flex">
+                  <p
+                    class="flex rounded-full border-[#acef5f] font-extrabold gap-3"
+                  >
+                    View Details
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 26 26"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 bg-green-400 rounded-full"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full p-6 border-2 rounded-2xl">
+              <img class="w-full" src="./assets/img2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-3 pt-3">
+            <!-- image 1 2nd row -->
+            <div class="w-full p-6 border-2 rounded-2xl">
+              <img class="w-full" src="./assets/img3.png" alt="" />
+            </div>
+
+            <!-- image 2 -->
+          
+            <div
+            class="p-6 flex flex-col md:flex md:flex-row border-2 gap-6 col-span-2 rounded-2xl"
+          >
+            <div class="md:w-11/12 lg:w-11/12">
+              <img class="w-full" src="./assets/img4.png" alt="" />
+            </div>
+            <div class="space-y-6">
+              <h1 class="text-xl font-black">Commercial</h1>
+              <p class="text-gray-400 font-semibold">
+                The barn house captivates with its blend of rustic charm
+                <br />
+                and modern. The barn house captivates with its blend of <br />
+                rustic charm and modern .
+              </p>
+              <div class="flex">
+                <p
+                  class="flex rounded-full border-[#acef5f] font-extrabold gap-3"
+                >
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 26 26"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 bg-green-400 rounded-full"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+            <!-- image 3 -->
+            <div class="w-full p-6 border-2 rounded-2xl">
+              <img class="w-full" src="./assets/img5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- log in section -->
+
+      <section
+        class="border-8 border-white bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover my-14"
+      >
+        <div class="py-24 space-y-6 grid place-items-center">
+          <button class="btn bg-[#acef5f9a] rounded-full text-black">
+            <i class="fa-solid fa-arrow-right"></i>Lets Connect
+          </button>
+
+          <h1 class="text-3xl font-black text-center">
+            Let's Discuss Next Project
+          </h1>
+
+          <p class="text-center opacity-75">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal <br />
+            accents, and large windows that flood the space with natural light.
+          </p>
+
+          <div class="grid grid-cols-4 gap-5">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="p-4 pl-6 rounded-full col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="First Name"
+              class="p-4 pl-6 rounded-full col-span-2"
+            />
+
+            <input
+              type="text"
+              placeholder="First Name"
+              class="p-4 pl-6 rounded-full col-span-2"
+            />
+            <input
+              type="text"
+              placeholder="First Name"
+              class="p-4 pl-6 rounded-full col-span-2"
+            />
+
+            <textarea
+              placeholder="Bio"
+              class="textarea textarea-bordered textarea-lg w-full max-w-xs col-start-1 row-start-3 col-end-6 row-end-4"
+            ></textarea>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!--  -->
+
+
 
     <!-- footer  -->
 

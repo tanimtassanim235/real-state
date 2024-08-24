@@ -54,14 +54,16 @@
       <nav>
         <div class="navbar bg-base-100 p-0 py-5">
           <div class="navbar-start">
-            <a class="btn btn-ghost text-xl font-extrabold">
+            <a
+              class="btn btn-ghost text-xl font-extrabold md:text-2xl lg:text-3xl"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 26 26"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 bg-green-400 rounded-full"
+                class="size-6 bg-green-400 rounded-full p-1"
               >
                 <path
                   stroke-linecap="round"
@@ -74,11 +76,11 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a class="font-bold">Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a class="font-bold md:text-2xl lg:text-2xl">Home</a></li>
+              <li><a class="md:text-2xl lg:text-2xl">Services</a></li>
+              <li><a class="md:text-2xl lg:text-2xl">Portfolio</a></li>
+              <li><a class="md:text-2xl lg:text-2xl">Blogs</a></li>
+              <li><a class="md:text-2xl lg:text-2xl">Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -108,7 +110,7 @@
               viewBox="0 0 24 24"
               stroke-width="0.5"
               stroke="currentColor"
-              class="size-8 mr-4 border-gray-400 rounded-full border-2 hidden md:block"
+              class="size-8 mr-4 border-gray-400 rounded-full border hidden md:block p-1"
             >
               <path
                 stroke-linecap="round"
@@ -123,7 +125,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-8 mr-4 border-gray-400 rounded-full border-2 hidden md:block"
+              class="size-8 mr-4 border-gray-400 rounded-full border hidden md:block p-1"
             >
               <path
                 stroke-linecap="round"
@@ -141,7 +143,7 @@
                 viewBox="0 0 26 26"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6 bg-black rounded-full stroke-white stroke-2 hidden md:inline-block"
+                class="size-6 bg-black rounded-full stroke-white stroke-2 hidden md:inline-block p-1"
               >
                 <path
                   stroke-linecap="round"
@@ -180,7 +182,7 @@
               viewBox="0 0 26 26"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 bg-green-400 rounded-full"
+              class="size-6 bg-green-400 rounded-full p-1"
             >
               <path
                 stroke-linecap="round"
@@ -199,13 +201,12 @@
       <!-- we design section  -->
       <!-- img div -->
 
-      <section class="bg-gray-50">
-        <!-- <div class="relative">
-          <img
-            class="absolute left-10 hidden lg:visible md:visible md:w-full"
-            src="./assets/Vector.png"
-            alt=""
-          /> -->
+      <section class="bg-gray-50 relative">
+        <img
+          class="absolute top-8 left-40 hidden lg:inline-block md:inline-block"
+          src="./assets/Vector.png"
+          alt=""
+        />
 
         <div class="hero bg-base-200 min-h-screen mt-20 pt-16">
           <div class="hero-content flex-col-reverse lg:flex-row-reverse">
@@ -409,7 +410,7 @@
                       viewBox="0 0 26 26"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6 bg-green-400 rounded-full"
+                      class="size-6 bg-green-400 rounded-full p-1"
                     >
                       <path
                         stroke-linecap="round"
@@ -462,7 +463,7 @@
                       viewBox="0 0 26 26"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6 bg-green-400 rounded-full"
+                      class="size-6 bg-green-400 rounded-full p-1"
                     >
                       <path
                         stroke-linecap="round"
@@ -506,7 +507,7 @@
               type="text"
               name=""
               id=""
-              class="p-4 rounded-3xl w-full md:w-1/2 "
+              class="p-4 rounded-3xl w-full md:w-1/2"
               placeholder="First name*"
             />
             <input
@@ -517,12 +518,12 @@
               placeholder="Last name*"
             />
           </div>
-          <div class="w-3/4 gap-3  flex flex-col md:flex-row lg:flex-row">
+          <div class="w-3/4 gap-3 flex flex-col md:flex-row lg:flex-row">
             <input
               type="text"
               name=""
               id=""
-              class="p-4 rounded-3xl w-full  md:w-1/2"
+              class="p-4 rounded-3xl w-full md:w-1/2"
               placeholder="Phone Number"
             />
             <input
@@ -538,10 +539,12 @@
             name=""
             id=""
             placeholder="Write Something"
-            class="md:h-80 lg:h-80 h-64 md:w-3/4 lg:w-3/4 w-4/5 rounded-3xl p-6"
+            class="md:h-80 lg:h-80 h-64 md:w-3/4 lg:w-3/4 w-4/5 rounded-3xl p-6 resize-none"
           ></textarea>
 
-          <button class="btn btn-wide w-3/4 bg-[#acef5fee] text-2xl rounded-3xl font-black">
+          <button
+            class="btn btn-wide w-3/4 bg-[#acef5fee] text-2xl rounded-3xl font-black"
+          >
             Send Mail
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -549,7 +552,7 @@
               viewBox="0 0 26 26"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 bg-black rounded-full stroke-white stroke-2 hidden md:inline-block"
+              class="size-6 bg-black rounded-full stroke-white stroke-2 p-1"
             >
               <path
                 stroke-linecap="round"
@@ -573,7 +576,7 @@
             viewBox="0 0 26 26"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 bg-[#ABEF5F] rounded-full text-black"
+            class="size-6 bg-[#ABEF5F] rounded-full text-black p-1"
           >
             <path
               stroke-linecap="round"
@@ -609,7 +612,7 @@
             viewBox="0 0 26 26"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 bg-black rounded-full stroke-white stroke-2"
+            class="size-6 bg-black rounded-full stroke-white stroke-2 p-1"
           >
             <path
               stroke-linecap="round"

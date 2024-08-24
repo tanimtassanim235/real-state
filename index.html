@@ -427,51 +427,53 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-3 pt-3">
+          <div
+            class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-3 pt-3"
+          >
             <!-- image 1 2nd row -->
             <div class="w-full p-6 border-2 rounded-2xl">
               <img class="w-full" src="./assets/img3.png" alt="" />
             </div>
 
             <!-- image 2 -->
-          
+
             <div
-            class="p-6 flex flex-col md:flex md:flex-row border-2 gap-6 col-span-2 rounded-2xl"
-          >
-            <div class="md:w-11/12 lg:w-11/12">
-              <img class="w-full" src="./assets/img4.png" alt="" />
-            </div>
-            <div class="space-y-6">
-              <h1 class="text-xl font-black">Commercial</h1>
-              <p class="text-gray-400 font-semibold">
-                The barn house captivates with its blend of rustic charm
-                <br />
-                and modern. The barn house captivates with its blend of <br />
-                rustic charm and modern .
-              </p>
-              <div class="flex">
-                <p
-                  class="flex rounded-full border-[#acef5f] font-extrabold gap-3"
-                >
-                  View Details
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 26 26"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6 bg-green-400 rounded-full"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
+              class="p-6 flex flex-col md:flex md:flex-row border-2 gap-6 col-span-2 rounded-2xl"
+            >
+              <div class="md:w-11/12 lg:w-11/12">
+                <img class="w-full" src="./assets/img4.png" alt="" />
+              </div>
+              <div class="space-y-6">
+                <h1 class="text-xl font-black">Commercial</h1>
+                <p class="text-gray-400 font-semibold">
+                  The barn house captivates with its blend of rustic charm
+                  <br />
+                  and modern. The barn house captivates with its blend of <br />
+                  rustic charm and modern .
                 </p>
+                <div class="flex">
+                  <p
+                    class="flex rounded-full border-[#acef5f] font-extrabold gap-3"
+                  >
+                    View Details
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 26 26"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 bg-green-400 rounded-full"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
             <!-- image 3 -->
             <div class="w-full p-6 border-2 rounded-2xl">
               <img class="w-full" src="./assets/img5.png" alt="" />
@@ -485,7 +487,7 @@
         class="border-8 border-white bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover my-14"
       >
         <div class="py-24 space-y-6 grid place-items-center">
-          <button class="btn bg-[#acef5f9a] rounded-full text-black">
+          <button class="btn bg-[#acef5fa1] rounded-full text-black">
             <i class="fa-solid fa-arrow-right"></i>Lets Connect
           </button>
 
@@ -499,40 +501,66 @@
             accents, and large windows that flood the space with natural light.
           </p>
 
-          <div class="grid grid-cols-4 gap-5">
+          <div class="w-3/4 gap-3 flex flex-col md:flex-row lg:flex-row">
             <input
               type="text"
-              placeholder="First Name"
-              class="p-4 pl-6 rounded-full col-span-2"
+              name=""
+              id=""
+              class="p-4 rounded-3xl w-full md:w-1/2 "
+              placeholder="First name*"
             />
             <input
               type="text"
-              placeholder="First Name"
-              class="p-4 pl-6 rounded-full col-span-2"
+              name=""
+              id=""
+              class="p-4 rounded-3xl w-full md:w-1/2"
+              placeholder="Last name*"
             />
-
-            <input
-              type="text"
-              placeholder="First Name"
-              class="p-4 pl-6 rounded-full col-span-2"
-            />
-            <input
-              type="text"
-              placeholder="First Name"
-              class="p-4 pl-6 rounded-full col-span-2"
-            />
-
-            <textarea
-              placeholder="Bio"
-              class="textarea textarea-bordered textarea-lg w-full max-w-xs col-start-1 row-start-3 col-end-6 row-end-4"
-            ></textarea>
           </div>
+          <div class="w-3/4 gap-3  flex flex-col md:flex-row lg:flex-row">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="p-4 rounded-3xl w-full  md:w-1/2"
+              placeholder="Phone Number"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="p-4 rounded-3xl w-full md:w-1/2"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <textarea
+            name=""
+            id=""
+            placeholder="Write Something"
+            class="md:h-80 lg:h-80 h-64 md:w-3/4 lg:w-3/4 w-4/5 rounded-3xl p-6"
+          ></textarea>
+
+          <button class="btn btn-wide w-3/4 bg-[#acef5fee] text-2xl rounded-3xl font-black">
+            Send Mail
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 26 26"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 bg-black rounded-full stroke-white stroke-2 hidden md:inline-block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </button>
         </div>
       </section>
     </main>
-
-
-
 
     <!-- footer  -->
 
